@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tchernov cable</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <a class="header__logo" href="index.html">
+        <img src="images/logo/logo.svg" alt="logo" />
+      </a>
+      <div class="header__navigation">
+        <div class="header-search">
+          <button class="header__button header__button--search">
+            <i class="fas fa-search"></i>
+          </button>
+          <div class="header-search__dropdown">
+            <input class="header-search__input" type="text" />
+            <button class="header-search__btn">Искать</button>
+            <button class="header-search__close">
+              <i class="fas fa-times fa-2x"></i>
+            </button>
+          </div>
+        </div>
+        <ul class="header__menu">
+          <li class="header__li">
+            <button>Бренд</button>
+            <div class="header__menu-dropdown">
+              <a class="header__li-dropdown" href="#">Компания</a>
+              <a class="header__li-dropdown" href="#">Философия</a>
+              <a class="header__li-dropdown" href="#">Основные принципы</a>
+            </div>
+          </li>
+          <li class="header__li">
+            <button>Технологии</button>
+            <div class="header__menu-dropdown">
+              <a class="header__li-dropdown" href="#">CAFPE&reg;</a>
+              <a class="header__li-dropdown" href="#">SATI&reg;</a>
+              <a class="header__li-dropdown" href="#">SDB И SASDB&reg;</a>
+              <a class="header__li-dropdown" href="#">CABLE-CORE & FTDA&reg;</a>
+              <a class="header__li-dropdown" href="#">DSC</a>
+              <a class="header__li-dropdown" href="#">CIDAS</a>
+              <a class="header__li-dropdown" href="#">
+                X-SHIELD&reg; И X-SHIELD&reg; SE
+              </a>
+            </div>
+          </li>
+          <li class="header__li"><a href="#">Материалы</a></li>
+          <li class="header__li">
+            <button>Продукция</button>
+            <div class="header__menu-dropdown">
+              <div class="header__menu-columns">
+                <div class="header__menu-col">
+                  <h4 class="header__menu-title">Типы кабелей</h4>
+                  <a class="header__li-dropdown" href="#">
+                    Аналоговые межкомпонентные кабели
+                  </a>
+                  <a class="header__li-dropdown" href="#">
+                    Цифровые межкомпонентные кабели
+                  </a>
+                  <a class="header__li-dropdown" href="#">
+                    Сабвуферные кабели
+                  </a>
+                  <a class="header__li-dropdown" href="#">
+                    Аккустические кабели
+                  </a>
+                  <a class="header__li-dropdown" href="#"> Силовые кабели </a>
+                  <a class="header__li-dropdown" href="#"> Разъемы </a>
+                </div>
+                <div class="header__menu-col">
+                  <h4 class="header__menu-title">Линейки</h4>
+                  <a
+                    class="header__li-dropdown header__li-dropdown--standard"
+                    href="#"
+                    >StandarD</a
+                  >
+                  <a
+                    class="header__li-dropdown header__li-dropdown--special"
+                    href="#"
+                  >
+                    Special
+                  </a>
+                  <a
+                    class="header__li-dropdown header__li-dropdown--classic"
+                    href="#"
+                  >
+                    Classic
+                  </a>
+                  <a
+                    class="header__li-dropdown header__li-dropdown--reference"
+                    href="#"
+                  >
+                    Reference
+                  </a>
+                  <a
+                    class="header__li-dropdown header__li-dropdown--ultimate"
+                    href="#"
+                  >
+                    Ultimate
+                  </a>
+                  <a
+                    class="header__li-dropdown header__li-dropdown--pro"
+                    href="#"
+                  >
+                    Pro
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="header__li"><a href="#">Новости</a></li>
+          <li class="header__li"><a href="#">Тесты</a></li>
+          <li class="header__li">
+            <button>FAQ</button>
+            <div class="header__menu-dropdown">
+              <a class="header__li-dropdown" href="#">ОБЩИЕ ВОПРОСЫ</a>
+              <a class="header__li-dropdown" href="#">МАТЕРИАЛЫ</a>
+              <a class="header__li-dropdown" href="#">ПРОВОДНИК</a>
+              <a class="header__li-dropdown" href="#">ТЕХНОЛОГИИ</a>
+              <a class="header__li-dropdown" href="#">КОННЕКТОРЫ</a>
+              <a class="header__li-dropdown" href="#">ПРИПОЙ</a>
+              <a class="header__li-dropdown" href="#">СИЛОВЫЕ КАБЕЛИ</a>
+            </div>
+          </li>
+          <li class="header__li"><a href="#">Контакты</a></li>
+        </ul>
+
+        <div class="header-lang">
+          <button class="header__button header__button--lang">ru</button>
+          <div class="header-lang__dropdown">
+            <button class="header-lang__btn">Русский</button>
+            <button class="header-lang__btn">English</button>
+            <button class="header-lang__btn">中文</button>
+          </div>
+        </div>
+        <div class="header-burger">
+          <button class="header-burger__btn"><span></span></button>
+        </div>
+      </div>
+    </header>
+
+    <div class="spacer"></div>
+
+    <section class="banner">
+      <div class="banner__slider slider">
+        <div class="slider__slide">
+          <div class="container container--slider">
+            <h2 class="slider__title">
+              <span class="slider__title-color">Special</span> ANALOG RCA
+            </h2>
+            <div class="slider__text">
+              Силовой кабель класса High End. Играет важную роль
+              в&nbsp;формировании системы обучения кадров, соответствующей
+              насущным потребностям
+            </div>
+            <a class="slider__link" href="#">Подробности</a>
+          </div>
+        </div>
+        <div class="slider__slide">
+          <div class="container container--slider">
+            <h2 class="slider__title">
+              <span class="slider__title-color">Special</span> ANALOG RCA
+            </h2>
+            <div class="slider__text">
+              Силовой кабель класса High End. Играет важную роль <br />
+              в формировании системы обучения кадров, соответствующей насущным
+              потребностям
+            </div>
+            <a class="slider__link" href="#">Подробности</a>
+          </div>
+        </div>
+        <div class="slider__slide">
+          <div class="container container--slider">
+            <h2 class="slider__title">
+              <span class="slider__title-color">Special</span> ANALOG RCA
+            </h2>
+            <div class="slider__text">
+              Силовой кабель класса High End. Играет важную роль <br />
+              в формировании системы обучения кадров, соответствующей насущным
+              потребностям
+            </div>
+            <a class="slider__link" href="#">Подробности</a>
+          </div>
+        </div>
+      </div>
+      <div class="container container--buttons">
+        <div class="slider__buttons">
+          <button class="slider__button slider__button--prev">
+            <i class="fas fa-chevron-left fa-3x"></i>
+          </button>
+          <button class="slider__button slider__button--next">
+            <i class="fas fa-chevron-right fa-3x"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="history">
+      <div class="container">
+        <h3 class="section__title">Производится в России с 2001</h3>
+        <p class="section__text">
+          С момента выхода на рынок в 2002 году марка Tchernov Cable практически
+          сразу встала в&nbsp;один ряд с ведущими мировыми производителями
+          специализированной кабельной продукции для аудио-видео. Сегодня мы
+          предлагаем широкий спектр проводов и&nbsp;кабелей как бытового, так
+          и&nbsp;профессионального назначения для любых видов инсталляций. Наша
+          продукция продолжает завоёвывать новые рынки: неуклонно растёт число
+          наших дистрибьюторов в мире и все больше любителей хорошего звука во
+          многих странах делают свой выбор в пользу Tchernov Cable.
+        </p>
+      </div>
+    </section>
+
+    <section class="products">
+      <div class="container">
+        <h3 class="section__title">Линейки продуктов</h3>
+        <p class="section__text">
+          В изделиях Tchernov Cable используется самое качественное сырьё,
+          материалы и комплектующие
+        </p>
+        <div class="products__list">
+          <a href="#" class="products__card"> Standard </a>
+          <a href="#" class="products__card products__card--special">
+            Special
+          </a>
+          <a href="#" class="products__card products__card--classic">
+            Classic
+          </a>
+          <a href="#" class="products__card products__card--reference">
+            Reference
+          </a>
+          <a href="#" class="products__card products__card--ultimate">
+            Ultimate
+          </a>
+          <a href="#" class="products__card products__card--pro"> Pro </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="type">
+      <div class="container">
+        <h3 class="section__title">Типы кабеля</h3>
+        <p class="section__text">
+          Все конструкции Tchernov Cable с медными токопроводящими жилами и
+          экранами — наши собственные разработки
+        </p>
+        <div class="type__list">
+          <a href="#" class="type__card"> Аналоговые межкомпонентные кабели </a>
+          <a href="#" class="type__card type__card--digital">
+            Цифровые <br />
+            межкомпонентные кабели
+          </a>
+          <a href="#" class="type__card type__card--sub">
+            Сабвуферные кабели
+          </a>
+          <a href="#" class="type__card type__card--accoustic">
+            Аккустические кабели
+          </a>
+          <a href="#" class="type__card type__card--power"> Силовые кабели </a>
+          <a href="#" class="type__card type__card--jacks"> Разъемы </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="news">
+      <div class="container">
+        <h3 class="section__title">Новости</h3>
+        <div class="news__list">
+          <a href="#" class="news-card news-card--large">
+            <div class="news-card__img">
+              <img src="images/news/01.jpg" alt="img01" />
+            </div>
+            <div class="news-card__items">
+              <h4 class="news-card__title">
+                Цифровой высокоскоростной кабель Pro USB A-B IC
+              </h4>
+              <p class="news-card__text">
+                В своём стремлении повысить качество жизни, они забывают
+              </p>
+              <p class="news-card__date">13 сентября 2021</p>
+            </div>
+          </a>
+          <a href="#" class="news-card">
+            <div class="news-card__img">
+              <img src="images/news/02.jpg" alt="img02" />
+            </div>
+            <div class="news-card__items">
+              <h4 class="news-card__title">
+                Цифровой высокоскоростной кабель Pro USB A-B IC
+              </h4>
+              <p class="news-card__text">
+                В своём стремлении повысить качество жизни, они забывают
+              </p>
+              <p class="news-card__date">13 сентября 2021</p>
+            </div>
+          </a>
+          <a href="#" class="news-card news-card--press">
+            <div class="news-card__img">
+              <img src="images/news/03.jpg" alt="img03" />
+            </div>
+            <div class="news-card__items">
+              <h4 class="news-card__title">
+                Высокоскоростной кабель для цифрового оборудования
+              </h4>
+              <p class="news-card__text">
+                В своём стремлении повысить качество жизни, они забывают
+              </p>
+              <p class="news-card__date">10 сентября 2021</p>
+            </div>
+          </a>
+          <a href="#" class="news-card">
+            <div class="news-card__img">
+              <img src="images/news/04.jpg" alt="img04" />
+            </div>
+            <div class="news-card__items">
+              <h4 class="news-card__title">
+                Основной функциональный симметричный кабель
+              </h4>
+              <p class="news-card__text">
+                В своём стремлении повысить качество жизни, они забывают
+              </p>
+              <p class="news-card__date">29 августа 2021</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__items">
+          <div class="footer__menu">
+            <a class="footer__menu-link" href="#">Загрузить каталог</a>
+            <a class="footer__menu-link" href="#">Shop Europe</a>
+            <a class="footer__menu-link" href="#">Магазин</a>
+            <a class="footer__menu-link" href="#">Архив моделей</a>
+            <a class="footer__menu-link" href="#">Галерея</a>
+            <a class="footer__menu-link" href="#">Задать вопрос</a>
+            <a class="footer__menu-link" href="#">Контакты</a>
+          </div>
+          <div class="footer__contacts">
+            <div class="contacts__address">
+              Чернов Аудио <br />
+              ул. 3-я магистральная 30/2, <br />
+              123007, Москва, Россия
+            </div>
+            <a
+              href="tel:+74957211381"
+              class="contacts__phone footer__menu-link"
+            >
+              +7 (495) 721-13-81
+            </a>
+            <a
+              href="mailto:sales@tchernovcable.com"
+              class="contacts__email footer__menu-link"
+            >
+              sales@tchernovcable.com
+            </a>
+          </div>
+          <div class="footer__social">
+            <a
+              class="footer__social-icon"
+              target="_blank"
+              href="https://ru-ru.facebook.com/"
+            >
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a
+              class="footer__social-icon"
+              target="_blank"
+              href="https://twitter.com/?lang=ru"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a
+              class="footer__social-icon"
+              target="_blank"
+              href="https://www.youtube.com/"
+            >
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+        <div class="footer__copyright">
+          <div class="footer__copyright-text">
+            © 2011–<span>2027</span> Tchernov Audio GmbH
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal-menu">
+      <ul class="modal-menu__list">
+        <li>
+          <button class="modal-menu__item modal-menu__item--brand">
+            Бренд
+          </button>
+        </li>
+        <li>
+          <button class="modal-menu__item modal-menu__item--tech">
+            Технологии
+          </button>
+        </li>
+        <li><a class="modal-menu__item" href="#">Материалы</a></li>
+        <li>
+          <button class="modal-menu__item modal-menu__item--prod">
+            Продукция
+          </button>
+        </li>
+        <li><a class="modal-menu__item" href="#">Новости</a></li>
+        <li><a class="modal-menu__item" href="#">Тесты</a></li>
+        <li>
+          <button class="modal-menu__item modal-menu__item--faq">FAQ</button>
+        </li>
+        <li><a class="modal-menu__item" href="#">Контакты</a></li>
+      </ul>
+      <div class="modal-menu__lang">
+        <button class="modal-menu__lang-item">Ру</button>
+        <button class="modal-menu__lang-item">En</button>
+        <button class="modal-menu__lang-item">中文</button>
+      </div>
+      <button class="modal-menu__close">
+        <i class="fas fa-times fa-2x"></i>
+      </button>
+    </div>
+
+    <div class="modal-menu modal-menu--brand">
+      <ul class="modal-menu__list modal-menu__list--margin">
+        <li><a class="modal-menu__item" href="#">Компания</a></li>
+        <li><a class="modal-menu__item" href="#">Философия</a></li>
+        <li><a class="modal-menu__item" href="#">Основные принципы</a></li>
+      </ul>
+      <button class="modal-menu__arrow">
+        <i class="fas fa-arrow-left fa-2x"></i>
+      </button>
+      <button class="modal-menu__close">
+        <i class="fas fa-times fa-2x"></i>
+      </button>
+    </div>
+
+    <div class="modal-menu modal-menu--tech">
+      <ul class="modal-menu__list modal-menu__list--margin">
+        <li><a class="modal-menu__item" href="#">CAFPE&reg;</a></li>
+        <li><a class="modal-menu__item" href="#">SATI&reg;</a></li>
+        <li><a class="modal-menu__item" href="#">SDB И SASDB&reg;</a></li>
+        <li>
+          <a class="modal-menu__item" href="#">CABLE-CORE & FTDA&reg;</a>
+        </li>
+        <li><a class="modal-menu__item" href="#">DSC</a></li>
+        <li><a class="modal-menu__item" href="#">CIDAS</a></li>
+        <li>
+          <a class="modal-menu__item" href="#">
+            X-SHIELD&reg; И X-SHIELD&reg; SE
+          </a>
+        </li>
+      </ul>
+      <button class="modal-menu__arrow">
+        <i class="fas fa-arrow-left fa-2x"></i>
+      </button>
+      <button class="modal-menu__close">
+        <i class="fas fa-times fa-2x"></i>
+      </button>
+    </div>
+
+    <div class="modal-menu modal-menu--prod">
+      <div class="modal-menu__list-product">
+        <div class="modal-menu__sublist">
+          <h4 class="modal-menu__title">Типы кабелей</h4>
+          <a class="modal-menu__li" href="#">
+            Аналоговые межкомпонентные кабели
+          </a>
+          <a class="modal-menu__li" href="#">
+            Цифровые межкомпонентные кабели
+          </a>
+          <a class="modal-menu__li" href="#">Сабвуферные кабели</a>
+          <a class="modal-menu__li" href="#">Аккустические кабели</a>
+          <a class="modal-menu__li" href="#">Силовые кабели</a>
+          <a class="modal-menu__li" href="#">Разъемы</a>
+        </div>
+        <div class="modal-menu__sublist">
+          <h4 class="modal-menu__title">Линейки</h4>
+          <a class="modal-menu__li modal-menu__li--standard" href="#">
+            StandarD
+          </a>
+          <a class="modal-menu__li modal-menu__li--special" href="#">
+            Special
+          </a>
+          <a class="modal-menu__li modal-menu__li--classic" href="#">
+            Classic
+          </a>
+          <a class="modal-menu__li modal-menu__li--reference" href="#"
+            >Reference</a
+          >
+          <a class="modal-menu__li modal-menu__li--ultimate" href="#"
+            >Ultimate</a
+          >
+          <a class="modal-menu__li modal-menu__li--pro" href="#">Pro</a>
+        </div>
+        <button class="modal-menu__arrow">
+          <i class="fas fa-arrow-left fa-2x"></i>
+        </button>
+        <button class="modal-menu__close">
+          <i class="fas fa-times fa-2x"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="modal-menu modal-menu--faq">
+      <ul class="modal-menu__list modal-menu__list--margin">
+        <li><a class="modal-menu__item" href="#">ОБЩИЕ ВОПРОСЫ</a></li>
+        <li><a class="modal-menu__item" href="#">МАТЕРИАЛЫ</a></li>
+        <li><a class="modal-menu__item" href="#">ПРОВОДНИК</a></li>
+        <li><a class="modal-menu__item" href="#">ТЕХНОЛОГИИ</a></li>
+        <li><a class="modal-menu__item" href="#">КОННЕКТОРЫ</a></li>
+        <li><a class="modal-menu__item" href="#">ПРИПОЙ</a></li>
+        <li><a class="modal-menu__item" href="#">СИЛОВЫЕ КАБЕЛИ</a></li>
+      </ul>
+      <button class="modal-menu__arrow">
+        <i class="fas fa-arrow-left fa-2x"></i>
+      </button>
+      <button class="modal-menu__close">
+        <i class="fas fa-times fa-2x"></i>
+      </button>
+    </div>
+
+    <script src="js/siema.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
