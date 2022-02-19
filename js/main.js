@@ -15,6 +15,17 @@ document
   .querySelector(".slider__button--next")
   .addEventListener("click", () => slider.next());
 
+const sliderProducts = new Siema({
+  selector: ".products__list--mobile",
+  loop: true,
+  onChange: onChangeSlider,
+});
+function onChangeSlider() {
+  const dots = document.querySelectorAll(".products__dot");
+  dots.forEach((dot) => dot.classList.remove("products__dot--active"));
+  dots[sliderProducts.currentSlide].classList.add("products__dot--active");
+}
+
 const langBtn = document.querySelector(".header__button--lang");
 const langDropdown = document.querySelector(".header-lang__dropdown");
 langBtn.addEventListener("click", () => {
