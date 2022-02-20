@@ -26,6 +26,28 @@ function onChangeSlider() {
   dots[sliderProducts.currentSlide].classList.add("products__dot--active");
 }
 
+const sliderType = new Siema({
+  selector: ".type__list--mobile",
+  loop: true,
+  onChange: onChangeSliderType,
+});
+function onChangeSliderType() {
+  const dots = document.querySelectorAll(".type__dot");
+  dots.forEach((dot) => dot.classList.remove("type__dot--active"));
+  dots[sliderType.currentSlide].classList.add("type__dot--active");
+}
+
+const sliderNews = new Siema({
+  selector: ".news__list--mobile",
+  loop: true,
+  onChange: onChangeSliderNews,
+});
+function onChangeSliderNews() {
+  const dots = document.querySelectorAll(".news__dot");
+  dots.forEach((dot) => dot.classList.remove("news__dot--active"));
+  dots[sliderNews.currentSlide].classList.add("news__dot--active");
+}
+
 const langBtn = document.querySelector(".header__button--lang");
 const langDropdown = document.querySelector(".header-lang__dropdown");
 langBtn.addEventListener("click", () => {
